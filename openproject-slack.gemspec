@@ -4,9 +4,9 @@ $:.push File.expand_path("../lib", __FILE__)
 require 'open_project/slack/version'
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "openproject-slack"
+  s.name        = "ticketing"
   s.version     = "0.2"#OpenProject::Slack::VERSION
-  s.authors     = "r-a-me-s-h"#"OpenProject GmbH"
+  s.authors     = "ramesh"#"OpenProject GmbH"
   s.email       = "guru9763@gmail.com"#"info@openproject.org"
   s.summary     = 'OpenProject Slack'
   s.description = "Slack integration"
