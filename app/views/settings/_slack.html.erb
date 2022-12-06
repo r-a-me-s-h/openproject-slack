@@ -1,0 +1,28 @@
+<section class="form--section">
+  <input type="hidden" name="settings[enabled]" value="1"/>
+
+  <div class="form--field">
+    <%= styled_label_tag("settings[webhook_url]", t("slack.default_webhook_url")) %>
+    <div class="form--field-container">
+      <%=
+        styled_text_field_tag(
+          "settings[webhook_url]",
+          Setting.plugin_openproject_slack["webhook_url"],
+          container_class: '-xwide'
+        )
+      %>
+    </div>
+  </div>
+
+  <span class="form--field-instructions">
+    <%# Creates the custom field if not yet present. %>
+    <% custom_field = OpenProject::Slack.project_custom_field %>
+    <%=
+      t(
+        "slack.per_project_instructions_html",
+        custom_field_url: edit_custom_field_url(custom_field),
+        custom_field_name: custom_field.name
+      )
+    %>
+  </span>
+</section>
