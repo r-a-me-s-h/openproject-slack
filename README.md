@@ -12,7 +12,7 @@ Do as shown in the documentation with the following custom Gemfile:
 
 ```
 group :opf_plugins do
-  gem "openproject-slack", git: "https://github.com/opf/openproject-slack.git", branch: "dev"
+  gem "openproject-slack", git: "https://github.com/r-a-me-s-h/openproject-slack.git"
 end
 ```
 
